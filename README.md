@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This repository contains the multi-objective optimization models and resolution algorithms for **CompuOpti**, a decision-support consulting company.
 
 The problem requires scheduling engineers with heterogeneous skills to client projects over a finite planning horizon $H$. Each project requires specific person-days for a set of qualifications, earns revenue upon complete execution, and incurs daily penalties if delivered past its contractual due date.
@@ -17,7 +17,7 @@ The problem requires scheduling engineers with heterogeneous skills to client pr
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 DMP/
@@ -41,7 +41,7 @@ DMP/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository**:
    ```bash
@@ -69,6 +69,4 @@ DMP/
 
 ---
 
-## 👥 Contributors
-- **Othmane MAAMAR** ([@Othmane197](https://github.com/Othmane197))
-- Group Members (MSc AI)
+
