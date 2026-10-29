@@ -1,0 +1,16 @@
+# Mathematical Optimization Solvers
+gurobipy>=11.0.0
+ortools>=9.9.0
+
+# Scientific Computing & Data Structures
+numpy>=1.26.0
+pandas>=2.2.0
+
+# Visualization (Objective Space & Decision Space)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.20.0
+
+# Development, Quality & Testing
+pytest>=8.0.0
+jupyter>=1.0.0
