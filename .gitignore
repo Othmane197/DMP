@@ -54,3 +54,7 @@ outputs/
 *.png
 *.html
 !data/*.json
+
+# Internal Roadmaps and Guides
+PROJECT_STEP_BY_STEP_ROADMAP.md
+DECISION_MODELING_COURSE_AND_PROJECT_MASTER_GUIDE.md
