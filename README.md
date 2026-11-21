@@ -42,8 +42,22 @@ DMP/
 pip install -r requirements.txt          # needs a Gurobi licence (free academic licence)
 python -m pytest -q tests
 python run_pareto.py data/toy_instance.json
-python run_pareto.py data/medium_instance.json --time-per-solve 120
-python run_pareto.py data/large_instance.json --time-per-solve 60 --total-time 3600
+python run_pareto.py data/medium_instance.json --time-per-solve 300
+python run_pareto.py data/large_instance.json --time-per-solve 60 --total-time 5400 --step jump
+python run_pareto.py data/large_instance.json --lex sequential --time-per-solve 60 --total-time 3600 --step jump
+python run_pareto.py data/large_instance.json --merge results/large results/large_sequential
 python run_pareto.py data/toy_instance.json --secondary max_projects late_projects
 python benchmark.py
 ```
+
+Interrupted runs resume from `results/<instance>/checkpoint.jsonl` when the same command is re-run.
+
+## Results (measured, one laptop)
+
+| Instance | Non-dominated points | Proven complete? | Max profit | Time |
+|---|---:|---|---:|---:|
+| toy | 10 | yes | 65 | < 4 s |
+| medium | 46 | yes | 413 | 53 min |
+| large | 68 (merged from 2 runs) | **no**, approximation; only the max profit is proven | 817 | 2.5 h |
+
+Benchmark on 12 generated instances: `results/benchmark.csv`. Details and limitations: [docs/PROJECT_EXPLAINED.md](docs/PROJECT_EXPLAINED.md).

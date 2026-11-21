@@ -8,7 +8,7 @@ for kA = UB_A, ..., 0 (outer level, bound fA <= kA):
     epsB = UB_B
     repeat:
         solve  lex( max f1, min fB, min fA )  s.t.  fA <= kA, fB <= epsB
-        (one MIP, lexicographic order encoded by integer weights)
+        (one MIP with lexicographic weights, or 3 MIPs in sequence: lex="sequential")
         record the point p;  epsB = fB(p) - 1
     until infeasible / epsB < 0
     level skipping: if every point found at level kA has fA <= m < kA, then the
@@ -24,12 +24,45 @@ Exactness holds only if each MIP is solved to optimality (status is recorded).
 
 from __future__ import annotations
 
+import json
 import time
-from typing import Callable, List, Optional, Sequence
+from pathlib import Path
+from typing import Callable, Dict, List, Optional, Sequence
 
 from src.io_parser import ProblemInstance
-from src.models.gurobi_model import CompuOptiGurobiModel, Solution
+from src.models.gurobi_model import CompuOptiGurobiModel, Solution, evaluate_schedule
 from src.algorithms.pareto import non_dominated
+
+
+class Checkpoint:
+    """Append-only log of finished solves, so an interrupted run can resume.
+    Each line stores one (kA, epsB) solve and its schedule. Because the algorithm is
+    deterministic given the solve results, replaying them reproduces the same path.
+    Records made with other settings (secondary objectives, time limit, step) are ignored."""
+
+    def __init__(self, path: Optional[Path], settings: dict):
+        self.path, self.settings = (Path(path) if path else None), settings
+        self.done: Dict[tuple, dict] = {}
+        if self.path and self.path.exists():
+            for line in self.path.read_text(encoding="utf-8").splitlines():
+                rec = json.loads(line)
+                if rec.get("settings") == settings:
+                    self.done[rec["k_a"], rec["eps_b"]] = rec
+
+    def get(self, k_a, eps_b):
+        return self.done.get((k_a, eps_b))
+
+    def add(self, k_a, eps_b, sol: Optional[Solution]):
+        if not self.path:
+            return
+        rec = {"settings": self.settings, "k_a": k_a, "eps_b": eps_b,
+               "found": sol is not None,
+               "status": sol.status if sol else None,
+               "runtime": sol.runtime if sol else 0.0,
+               "schedule": [list(r) for r in sol.schedule] if sol else None}
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(rec) + "\n")
 
 
 def epsilon_constraint(
@@ -40,10 +73,24 @@ def epsilon_constraint(
     threads: int = 0,
     step: str = "safe",
     log: Callable[[str], None] = print,
+    checkpoint_path: Optional[Path] = None,
+    lex: str = "weighted",
 ) -> dict:
+    """lex="weighted": each point is ONE MIP with lexicographic weights (fast on toy/medium).
+    lex="sequential": profit, then fB, then fA, each solved and frozen in turn, each stage
+    with its own time limit. On large, the weighted MIP rarely proves optimality in 60 s,
+    while profit alone is proven in seconds, so the sequential version gives better points."""
     a_name, b_name = secondary
     model = CompuOptiGurobiModel(instance, time_limit_sec=time_limit_per_solve, threads=threads)
     start = time.time()
+    settings = {"secondary": [a_name, b_name], "time_limit": time_limit_per_solve, "step": step}
+    if lex != "weighted":  # keeps checkpoints written before this option existed valid
+        settings["lex"] = lex
+    ckpt = Checkpoint(checkpoint_path, settings)
+    solve = {"weighted": model.solve_lex_weighted, "sequential": model.solve_lexicographic}[lex]
+    replayed_time = 0.0  # solver time of solves replayed from the checkpoint
+    if ckpt.done:
+        log(f"  resuming: {len(ckpt.done)} solves found in checkpoint")
 
     ub = {
         "max_projects": len(instance.jobs),
@@ -61,15 +108,25 @@ def epsilon_constraint(
         eps_b = ub[b_name]
         level_max_a = -1
         while eps_b >= 0:
-            if total_time_limit and time.time() - start > total_time_limit:
+            if total_time_limit and time.time() - start + replayed_time > total_time_limit:
                 timed_out = True
                 break
-            model.set_bound(b_name, eps_b)
-            # warm start: best known schedule that satisfies the current bounds
-            ok = [s for s in found
-                  if s.objectives[a_name] <= k_a and s.objectives[b_name] <= eps_b]
-            model.set_start(max(ok, key=lambda s: s.objectives["profit"]) if ok else None)
-            sol = model.solve_lex_weighted(["profit", b_name, a_name])
+            rec = ckpt.get(k_a, eps_b)
+            if rec is not None:  # replay a finished solve instead of re-solving
+                if rec["found"]:
+                    sol = evaluate_schedule(instance, [tuple(r) for r in rec["schedule"]])
+                    sol.status, sol.runtime = rec["status"], rec["runtime"]
+                else:
+                    sol = None
+                replayed_time += rec["runtime"]
+            else:
+                model.set_bound(b_name, eps_b)
+                # warm start: best known schedule that satisfies the current bounds
+                ok = [s for s in found
+                      if s.objectives[a_name] <= k_a and s.objectives[b_name] <= eps_b]
+                model.set_start(max(ok, key=lambda s: s.objectives["profit"]) if ok else None)
+                sol = solve(["profit", b_name, a_name])
+                ckpt.add(k_a, eps_b, sol)
             n_solves += 1
             if sol is None:
                 break
@@ -102,7 +159,7 @@ def epsilon_constraint(
         "front": front,
         "objectives": names,
         "n_solves": n_solves,
-        "runtime": time.time() - start,
+        "runtime": time.time() - start + replayed_time,
         "exact": all_optimal and not timed_out,
         "timed_out": timed_out,
     }

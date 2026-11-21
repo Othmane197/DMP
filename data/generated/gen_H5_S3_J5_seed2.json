@@ -1,0 +1,90 @@
+{
+    "horizon": 5,
+    "qualifications": [
+        "A",
+        "B",
+        "C"
+    ],
+    "staff": [
+        {
+            "name": "Olivia",
+            "qualifications": [
+                "A",
+                "C"
+            ],
+            "vacations": []
+        },
+        {
+            "name": "Liam",
+            "qualifications": [
+                "A",
+                "B",
+                "C"
+            ],
+            "vacations": []
+        },
+        {
+            "name": "Emma",
+            "qualifications": [
+                "A",
+                "B",
+                "C"
+            ],
+            "vacations": []
+        }
+    ],
+    "jobs": [
+        {
+            "name": "Job1",
+            "gain": 5,
+            "due_date": 4,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "C": 1,
+                "A": 1
+            }
+        },
+        {
+            "name": "Job2",
+            "gain": 10,
+            "due_date": 3,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "A": 2,
+                "C": 1
+            }
+        },
+        {
+            "name": "Job3",
+            "gain": 30,
+            "due_date": 3,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "C": 2,
+                "A": 2,
+                "B": 2
+            }
+        },
+        {
+            "name": "Job4",
+            "gain": 10,
+            "due_date": 3,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "C": 1,
+                "B": 2
+            }
+        },
+        {
+            "name": "Job5",
+            "gain": 20,
+            "due_date": 4,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "A": 2,
+                "B": 1,
+                "C": 1
+            }
+        }
+    ]
+}

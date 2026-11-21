@@ -54,6 +54,8 @@ outputs/
 *.png
 *.html
 !results/**/*.png
+results/**/checkpoint.jsonl
+results/benchmark_checkpoints/
 !data/*.json
 
 # Internal Roadmaps and Guides

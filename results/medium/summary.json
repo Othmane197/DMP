@@ -1,0 +1,39 @@
+{
+  "instance": {
+    "name": "medium_instance",
+    "horizon": 22,
+    "num_qualifications": 10,
+    "num_staff": 5,
+    "num_jobs": 15,
+    "total_workload_needed": 135,
+    "total_potential_capacity": 102
+  },
+  "objectives": [
+    "profit",
+    "max_projects",
+    "max_duration"
+  ],
+  "n_points": 46,
+  "n_supported": 29,
+  "n_mip_solves": 61,
+  "runtime_sec": 3171.5,
+  "exact": true,
+  "timed_out": false,
+  "ideal": {
+    "profit": 413.0,
+    "max_projects": 0,
+    "max_duration": 0
+  },
+  "nadir": {
+    "profit": 0.0,
+    "max_projects": 7,
+    "max_duration": 12
+  },
+  "recommended_id": 27,
+  "recommended": {
+    "profit": 322.0,
+    "max_projects": 3,
+    "max_duration": 5,
+    "late_projects": 1
+  }
+}

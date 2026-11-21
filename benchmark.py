@@ -42,9 +42,23 @@ def main():
     out = Path("results")
     out.mkdir(exist_ok=True)
     rows = []
+    done = set()
+    if (out / "benchmark.csv").exists():  # resume: keep finished instances
+        with open(out / "benchmark.csv", newline="") as f:
+            rows = [dict(r) for r in csv.DictReader(f)]
+        for r in rows:
+            for k in ("H", "S", "J", "seed", "n_vars", "n_constrs", "front_points", "front_solves"):
+                r[k] = int(r[k])
+            for k in ("max_profit", "profit_time_s", "front_time_s"):
+                r[k] = float(r[k]) if r[k] not in ("", "None") else None
+            for k in ("profit_optimal", "front_exact"):
+                r[k] = r[k] == "True"
+        done = {r["instance"] for r in rows}
     for (H, S, J) in SIZES:
         for seed in args.seeds:
             name = f"gen_H{H}_S{S}_J{J}_seed{seed}"
+            if name in done:
+                continue
             path = Path("data/generated") / f"{name}.json"
             save_instance_to_json(
                 generate_instance(horizon=H, num_staff=S, num_jobs=J,
@@ -55,7 +69,8 @@ def main():
             m.model.update()
             sol = m.solve_single("profit")
             res = epsilon_constraint(inst, time_limit_per_solve=args.time_per_solve,
-                                     total_time_limit=args.front_budget, log=lambda _: None)
+                                     total_time_limit=args.front_budget, log=lambda _: None,
+                                     checkpoint_path=out / "benchmark_checkpoints" / f"{name}.jsonl")
             row = {
                 "instance": name, "H": H, "S": S, "J": J, "seed": seed,
                 "n_vars": m.model.NumVars, "n_constrs": m.model.NumConstrs,

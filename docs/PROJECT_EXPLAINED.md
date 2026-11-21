@@ -12,9 +12,9 @@ Every number below is marked as **measured** (it comes from a run) or **estimate
 |---|---|
 | Model, algorithm, plots, generator, tests | **Done**, on this branch |
 | Toy instance | **Done.** 10 trade-off solutions, proven complete |
-| Medium instance | **Incomplete.** The first run had a bug; the re-run was interrupted |
-| Large instance | **Not solved.** The solver cannot prove optimality within 60 s per call |
-| Scalability benchmark | **Not run.** The script exists but was never executed |
+| Medium instance | **Done.** 46 trade-off solutions, proven complete (53 min) |
+| Large instance | **Approximate.** 68 trade-off solutions found in 2.5 h; only the max profit (817) is proven optimal |
+| Scalability benchmark | **Done.** 12 generated instances; fronts exact up to ~1,000 variables within 5 min |
 | Defense slides | **Not started** (required by the subject) |
 
 ---
@@ -42,6 +42,19 @@ The key difficulty: **there is more work than people.** Demand vs capacity on th
 | large | 36 | 6 | 25 | 10 | 272 | 193 | 141% |
 
 So the question is not only "when does each project happen" but also "which projects do we give up on". Even with perfect flexibility, a quarter to a third of the work cannot be done.
+
+**Do all projects have to be completed (even if late)?** No, and they *cannot* be.
+- The subject says it explicitly: the tool must help Margaux "bearing in mind that not all projects can always be staffed", and a project "generates revenue *if* completed".
+- The arithmetic settles it anyway. On the toy, the 5 projects need 14 person-days but the 3 engineers have only 13 working days between them (5 + 4 + 4 after leave). Completing all 5 is impossible, late or not. The same holds on medium (135 needed vs 102 available) and large (272 vs 193).
+- "Late" only exists **inside** the horizon. A project can finish after its due date (and pay the daily penalty), but it must finish by the last day. Work after the horizon is not modelled, because the data stops there.
+- Choosing *which* projects to drop is therefore part of the optimisation. Rule C2 below makes a project all-or-nothing: either it gets every person-day it needs, or nobody touches it.
+
+**Can two engineers with the same skill work on the same project at the same time?** Yes.
+- The subject's own example schedule (page 1) does it. On day 2, Alice and Charlie both work on "I, A".
+- Our model allows it. The only per-day limit is on the *engineer* (one task per day). There is no limit on how many engineers share a (project, skill, day).
+- It speeds the project up. A skill that needs 2 person-days can be done in 1 calendar day by 2 people. Example from the toy front (point #8, measured): Job4 needs 2 days of B and 1 day of C. On day 3, Olivia and Liam both do B and Emma does C, so the whole project takes **1 day** instead of 2.
+- The solver uses this a lot. It appears in 38 of the 46 medium front points (measured).
+- **Simplifying assumption:** the model treats person-days as perfectly splittable, so 2 people for 1 day count the same as 1 person for 2 days. In real teams, adding people does not always speed work up (coordination cost). The subject does not ask us to model that, but the jury may raise it.
 
 ---
 
@@ -160,6 +173,31 @@ for k = (number of projects) down to 0:         # limit on f2
 remove dominated schedules
 ```
 
+#### Walk-through on the toy instance (the real log, 15 solver calls)
+
+Read `[f2 ≤ k, f3 ≤ e]` as the question "what is the most profit I can make if no engineer touches more than *k* projects **and** no project lasts more than *e* days?". The solver answers with the best schedule, and we note its actual f2 and f3.
+
+| call | question: f2 ≤ k, f3 ≤ e | answer: profit, f2, f3 | what we do next |
+|---:|---|---|---|
+| 1 | k=5, e=5 (no real limit) | **65**, 3, 2 | Max profit is 65. Its longest project is 2 days. Can we get shorter? Ask e ≤ 1. |
+| 2 | k=5, e=1 | **59**, 4, 1 | 1-day projects cost 6 of profit. Ask e ≤ 0. |
+| 3 | k=5, e=0 | 0, 0, 0 | Only "do nothing" has duration 0. Level done. The largest f2 seen was 4, so limits 5 and 4 add nothing new (level skipping). Next k = 3. |
+| 4 | k=3, e=5 | 65, 3, 2 | Same as call 1. |
+| 5 | k=3, e=1 | **49**, 3, 1 | |
+| 6 | k=3, e=0 | 0 | Level done. Next k = 2. |
+| 7 | k=2, e=5 | **65**, 2, 3 | Still 65 with only 2 projects per engineer, but the longest project now takes 3 days. |
+| 8 | k=2, e=2 | **55**, 2, 2 | |
+| 9 | k=2, e=1 | **37**, 2, 1 | |
+| 10 | k=2, e=0 | 0 | Next k = 1. |
+| 11–14 | k=1, e = 5, 2, 1, 0 | **42**/1/3, **30**/1/2, **20**/1/1, 0 | |
+| 15 | k=0, e=5 | 0, 0, 0 | Nobody may work, so we stop. |
+
+Then we delete dominated answers. Call 4 repeats call 1, and call 2 (59, 4, 1) stays because no other point beats it on all three goals. That leaves the **10 schedules** in section 8.1.
+
+Two things to see in this table:
+- **Why "≤" and not "=".** The limit is a ceiling. "f3 ≤ 2" allows durations 0, 1 or 2, and the solver picks whatever earns most. That is why call 1 asked for ≤ 5 but got 2: the best schedule happened to be short already.
+- **Why the next limit is "its f3 − 1".** After finding (65, f3 = 2), asking "f3 ≤ 2" again would return the same schedule. Asking "f3 ≤ 1" forces something strictly shorter. Because durations are whole numbers, nothing between 1 and 2 can be skipped.
+
 Every criterion is a whole number, because the data has integer gains and penalties. So stepping the limits by 1 visits every possible trade-off. If every solver call ends with a proof of optimality, the method is **exact**: it finds the complete front, unsupported points included. Each run records whether this held (`summary.json` → `"exact"`).
 
 ### 5.3 Shortcuts that keep it exact
@@ -197,7 +235,7 @@ Model sizes with the final formulation (measured): toy 165 variables / 393 const
 
 1. **Independent checker.** Every schedule is re-checked by separate code that knows nothing about the solver: right skills, no leave days, one task per day, every project fully covered (`check_feasibility`). `run_pareto.py` refuses to save a schedule that fails.
 2. **Objectives recomputed from the timetable.** Profit, f2, f3 and f4 are recalculated from the list of assignments (`evaluate_schedule`), not read from solver variables.
-3. **Automated tests (8, all passing).** Toy max profit equals 65. The checker catches deliberate violations. Every pair of toy front points is mutually non-dominated. The generator never creates impossible projects.
+3. **Automated tests (9, all passing).** Toy max profit equals 65. The checker catches deliberate violations. Every pair of toy front points is mutually non-dominated. The generator never creates impossible projects. Resuming an interrupted run from its checkpoint gives the same front.
 
 Max profit is 65 on toy and 413 on medium, both proven optimal by the solver. We have not compared them with an official answer key.
 
@@ -239,31 +277,103 @@ Max profit is 65 on toy and 413 on medium, both proven optimal by the solver. We
 
 *Decision space for a max-profit schedule: four projects for 65; the longest project spans 3 days.*
 
-### 8.2 Medium instance: preliminary, incomplete
+### 8.2 Medium instance: final, exact
 
-> The first full medium run (57 solver calls, 44 minutes) had a bug that skipped part of the front (section 9), and 5 of its calls stopped at the time limit. The re-run with the fix was interrupted. The numbers below are individual points that **were proven optimal** for their limits, so each value is correct. But the list is **not complete** and must not be presented as the medium front.
+5 engineers, 22 days, 15 projects, 10 skills. **46 non-dominated schedules (29 supported, 17 unsupported), proven complete** (measured).
+- 61 solver calls, all proven optimal, 53 minutes in total.
+- Median call 24 s, slowest 244 s; 19 calls took more than 60 s. The limit was 300 s per call and no call reached it.
+- Run settings: `--time-per-solve 300 --threads 4`, in parallel with the large run, so the timings are not from a quiet machine.
 
-**Price of short projects** (no limit on projects per engineer, measured):
+| | Profit | Max projects / engineer | Longest project (days) | Late projects | Projects done (of 15) |
+|---|---:|---:|---:|---:|---:|
+| Max profit (one of the 413 schedules) | 413 | 5 | 10 | 3 | 11 |
+| Default compromise (#27) | 322 | 3 | 5 | 1 | 7 |
 
-| Longest project allowed | 8 days | 6 | 5 | 4 | 3 | 2 |
+**Price of short projects** (best profit on the front with no project longer than the cap, any number of projects per engineer; measured):
+
+| Longest project allowed | ≥ 8 days | 6 | 5 | 4 | 3 | 2 |
 |---|---:|---:|---:|---:|---:|---:|
 | Best profit | 413 | 411 | 406 | 380 | 265 | 30 |
+| Loss vs 413 | 0 | 0.5% | 1.7% | 8% | 36% | 93% |
 
-**Price of focus** (no limit on duration, measured):
+**Price of focus** (best profit with at most *k* projects per engineer, any duration; measured):
 
-| Max projects per engineer | ≤ 5 | 4 | 3 | 2 | 1 |
+| Max projects per engineer | ≥ 5 | 4 | 3 | 2 | 1 |
 |---|---:|---:|---:|---:|---:|
 | Best profit | 413 | 405 | 382 | 326 | 194 |
+| Loss vs 413 | 0 | 1.9% | 7.5% | 21% | 53% |
 
-Preliminary reading: the last few percent of profit are cheap to give up. Capping projects at 6 days costs 2 out of 413; capping engineers at 4 projects costs 8. Below that, losses grow fast: 3-day projects cost over a third of the profit.
+**How to read it.** The last few percent of profit are cheap to give up. Capping projects at 5 days costs 7 out of 413, and capping engineers at 4 projects costs 8. Below that, the losses grow fast: 3-day projects cost over a third of the profit, and 1 project per engineer costs half. A defensible message for the CEO: "keep projects ≤ 5 days and engineers on ≤ 4 projects, and you lose under 2% each".
 
-### 8.3 Large instance: not solved
+The compromise is less obvious than it looks. It gives up 22% of the profit to reach 3 projects per engineer and 5-day projects. That is the price of the equal weights, not a recommendation (section 10).
 
-Every solver call on large hit its 60-second limit without proof. The best schedule found so far earns 810. An unconstrained call returned 808, and a *more constrained* call then found 810. That proves the calls are not reaching the optimum here. Any large front will be an **approximation** and must be labelled as such. For large, `run_pareto.py --step jump` trades coverage for speed.
+![Objective space, medium](../results/medium/objective_space.png)
 
-### 8.4 Benchmark on generated instances: not run
+*Medium objective space. 17 of the 46 points (orange) are unsupported: a weighted-sum method would have missed 37% of the trade-offs.*
 
-The subject requires an instance generator, and it exists (`src/generator.py`). It controls size, skills per engineer, leave rate, demand/capacity ratio and due-date tightness, and it guarantees every needed skill exists in the team. `benchmark.py` (12 instances, timing the max-profit solve and the full front) has not been run, so there are no scalability numbers yet.
+![Compromise schedule, medium](../results/medium/schedule_compromise.png)
+
+### 8.3 Large instance: approximate (not proven complete)
+
+6 engineers, 36 days, 25 projects, 10 skills, 141% demand. Here the solver can no longer prove optimality within a minute per call, so the front is an **approximation**: every schedule in it is feasible and checked, but better trade-offs may exist.
+
+**What we ran (measured):**
+
+| Run | Points | Calls | Calls proven optimal | Time | What it covered |
+|---|---:|---:|---:|---:|---|
+| A: one weighted solve per point, 60 s per call, `--step jump` | 61 | 103 | 18 | 1.5 h (budget) | engineer limits 25 → 2; budget ran out before limit 1 |
+| B: profit, then duration, then focus solved one after the other, 60 s per stage | 13 | 30 | 9 | 1 h (budget) | only the top levels, engineer limit ≥ 7 (the high-profit end); budget ran out at 7 |
+| **A + B merged** (`--merge`) | **68** (27 supported) | 133 | | 2.5 h | union of both, re-checked, dominated points removed |
+
+**Why there are two runs.** Run A's best schedule earned 811. A separate max-profit solve, with no tie-breaking goals, proved in **13 s** that the true maximum is **817** (`results/large/max_profit_bound.json`). So run A missed the top of the front. The combined objective (profit weighted so heavily that duration and focus only break ties) is much harder to *prove* than profit alone. Run B solves profit first and freezes it, then the other goals. It found 817 straight away.
+
+Run B added 10 points and pushed out 3 of run A's points, all at the high-profit end (profit ≥ 584). Run A's coverage of the low-profit, focused schedules is still the only one available.
+
+| | Profit | Max projects / engineer | Longest project (days) | Late | Projects done (of 25) |
+|---|---:|---:|---:|---:|---:|
+| Max profit (proven optimal profit) | 817 | 9 | 8 | 2 | 17 |
+| Default compromise (#34) | 620 | 4 | 8 | 2 | 11 |
+
+**Price of short projects and of focus** on the merged front. These are what we *found*, i.e. lower bounds; the true best profit for each cap may be higher.
+
+| Longest project allowed | ≥ 8 | 7 | 6 | 5 | 4 | 3 |
+|---|---:|---:|---:|---:|---:|---:|
+| Best profit found | 817 | 789 | 753 | 687 | 584 | 370 |
+
+| Max projects per engineer | ≥ 7 | 6 | 5 | 4 | 3 | 2 |
+|---|---:|---:|---:|---:|---:|---:|
+| Best profit found | 817 | 793 | 774 | 723 | 648 | 517 |
+
+The pattern is the same as on medium, just with a softer curve: ≤ 6-day projects cost ≤ 8%, ≤ 4 projects per engineer costs ≤ 12%. The limit "1 project per engineer" was **never explored** (the budget ran out), so it is missing from the table, not zero.
+
+**Supported / unsupported is relative here.** The test compares a point only with the other points found. On an incomplete front, a point labelled "unsupported" might become dominated, or a supported one might lose that status, once more points are found.
+
+![Objective space, large (merged)](../results/large_merged/objective_space.png)
+
+![Compromise schedule, large (merged)](../results/large_merged/schedule_compromise.png)
+
+### 8.4 Benchmark on generated instances
+
+The subject requires an instance generator (`src/generator.py`). It controls size, skills per engineer, leave rate, demand/capacity ratio (default 1.3, like the given instances) and due-date tightness, and it guarantees every needed skill exists in the team.
+
+`benchmark.py` generated 12 instances (6 sizes × 2 seeds, from toy size up to medium size). For each one it timed the max-profit solve (limit 120 s) and the full front (30 s per call, **300 s budget per front**). Measured, single run, 8-thread laptop:
+
+| Size (days, engineers, projects) | Variables | Max-profit solve | Front: points / calls / time | Front exact? |
+|---|---:|---|---|---|
+| 5, 3, 5 | 175 / 242 | 0.03 s / 0.06 s | 10/13/0.7 s · 12/17/1.5 s | yes / yes |
+| 10, 3, 6 | 400 / 542 | 0.05 s / 0.15 s | 18/24/8 s · 18/25/24 s | yes / yes |
+| 12, 4, 8 | 751 / 788 | 0.11 s / 0.58 s | 23/31/170 s · 22/32/126 s | yes / yes |
+| 15, 4, 10 | 1,064 / 860 | 0.08 s / 0.22 s | 15/26/7 s · 26/40/131 s | yes / yes |
+| 18, 5, 12 | 1,560 / 1,557 | 0.14 s / 1.9 s | 17/24/33 s · 15/22/301 s | yes / **no** |
+| 22, 5, 15 | 2,232 / 1,920 | 7.9 s / 28 s | 8/14/316 s · 9/15/304 s | **no** / **no** |
+
+![Benchmark](../results/benchmark.png)
+
+**What it shows.**
+- **Max profit alone stays easy.** It was proven optimal on all 12 instances, in at most 28 s.
+- **The full front is what gets hard.** Up to about 1,000 variables, every front was exact within 5 minutes. From about 1,500 variables, 3 of 4 fronts ran out of the 300 s budget. Those fronts are incomplete: they found only 8–15 points, while the given medium instance (similar size) has 46 points and needed 53 minutes.
+- **Same size, very different difficulty.** At size (15, 4, 10), one seed took 7 s and the other 131 s. Two seeds per size are too few to fit a growth curve. Read the table as "where it stops being easy", not as a scaling law.
+- Budgets overrun slightly (316 s for a 300 s budget), because the budget is checked between calls, not inside them.
 
 ---
 
@@ -273,6 +383,9 @@ The subject requires an instance generator, and it exists (`src/generator.py`). 
 - **Lateness formula.** A first version counted "open days after the due date". That undercounts lateness when a project *starts* after its due date. It was caught by reasoning before any results were produced. The correct form counts the days after the due date until the project is finished.
 - **Skipped trade-offs.** When a call hit its time limit, it sometimes returned only the "do nothing" schedule. The search then believed nothing shorter existed and skipped the rest of that level. This is why the first medium run is unusable. Fixes: the warm start (5.3), and after an unproven call the duration limit drops by only 1 (`--step safe`, the default).
 - **Time limit not respected.** One call ran 669 s with a 120 s limit. The cause is unknown, so run-time estimates carry this risk.
+- **One weighted solve vs solves in sequence.** On toy and medium, one weighted solve per point was 2–5× faster than three solves in sequence (section 6). On large the opposite holds: the weighted solve never proved the top point (811 found), while profit alone was proven at 817 in 13 s. Which encoding is faster depends on the instance, so both are kept (`--lex weighted|sequential`).
+- **Runs killed on Windows.** Long runs were killed twice, once when the Claude Code session closed and once when their console window was closed. Runs are now started windowless through a scheduled task, and every finished solve is saved to `checkpoint.jsonl` so a restart resumes instead of starting over.
+- **Status label.** Time-limited weighted solves were saved as `STATUS_9` (Gurobi's code for "time limit"). They are now labelled `TIME_LIMIT`, and the saved results were relabelled.
 
 ---
 
@@ -286,35 +399,51 @@ The algorithm delivers a menu. As a starting point, the code highlights a **comp
 
 ## 11. Weaknesses, most serious first
 
-1. **Only the toy front is final.** Medium is incomplete and large is unsolved. A defense today would show results on one 3-engineer instance.
-2. **Exactness does not scale.** The method is exact only if every call is proven optimal. On medium the hardest limits need minutes per call; on large no call is proven within a minute. The subject suggests approximate methods for that case. We only have a time-limited version of the exact method, not a dedicated heuristic.
-3. **No scalability evidence.** The generator and benchmark exist, but there are no numbers.
+1. **The large front is an approximation of unknown quality.** Only its top point is proven (profit 817). For every other point we do not know how far it is from the true trade-off, and the "1 project per engineer" limit was never explored. Showing it as "the large front" would be an overclaim; it must be presented as "the best trade-offs found in 2.5 h".
+2. **Exactness does not scale.** The method is exact only if every call is proven optimal. Medium needed 53 minutes, with calls of up to 4 minutes. On large, only 27 of 133 calls were proven. The subject suggests approximate methods for that case. We only have a time-limited version of the exact method, not a dedicated heuristic (e.g. local search or a matheuristic), so there is nothing to compare it with.
+3. **Thin scalability evidence.** 12 generated instances, 2 seeds per size, one run each, 300 s budget per front. Enough to show where exactness stops (around 1,500 variables), not enough for a scaling law.
 4. **Criteria interpretations are choices.** f2 is the max over engineers and f3 is the longest project. A different reading (sum of projects per engineer, total duration) gives a different front. Defensible, but it must be stated.
 5. **f4 is not searched jointly.** Late projects are reported for every schedule and can replace f2 or f3, but the four-criteria front is not computed.
 6. **The compromise is not preference-based** (section 10).
-7. **Timings are single runs** on one laptop. They are good enough to show that one formulation is several times faster, not to state a precise factor.
-8. **No slides yet**, although they are a required deliverable.
+7. **Timings are single runs** on one laptop, and medium and large ran in parallel (4 threads each). Good enough to show that one formulation is several times faster, not to state a precise factor.
+8. **Person-days are assumed perfectly splittable** (section 1): 2 engineers for 1 day count the same as 1 engineer for 2 days.
+9. **No slides yet**, although they are a required deliverable.
 
 ---
 
-## 12. What is left, and how long it takes
+## 12. What is left
 
-| Task | Estimated time | Basis |
+| Task | Why | Rough cost |
 |---|---|---|
-| Complete medium front (300 s limit per call) | 1–1.5 h | estimate from the first run (44 min at 120 s), plus the slow calls |
-| Approximate large front | ~1.5 h | fixed budget set in the command |
-| Benchmark (12 generated instances) | 40–70 min | estimate; upper bound 84 min |
-| Results write-up and slides | not estimated | depends on the team |
+| Defense slides | required by the subject | team's call |
+| Approximate large front with a real heuristic, or a longer run | weakness 1–2; would let us compare with the time-limited exact method | days of work (heuristic) / hours of computing (longer run) |
+| Front with f4 (late projects) instead of f2 or f3 | weakness 5; one command (`--secondary`) | ~1 h on medium (estimate) |
+| Ask the CEO to rank a few schedules, fit UTA | weakness 6 | needs a "CEO" (role-play) |
 
-To reproduce or continue (from the `DMP/` folder, with the Gurobi licence active):
+Measured run times, as a guide for re-running (one 8-thread laptop):
+
+| Command | Time |
+|---|---|
+| tests | ~2 s |
+| toy front | < 4 s |
+| medium front, 300 s per call | 53 min |
+| large, weighted, 60 s per call | 1.5 h (budget) |
+| large, sequential, 60 s per stage | 1 h (budget) |
+| benchmark | 24 min |
+
+To reproduce (from the `DMP/` folder, with the Gurobi licence active):
 
 ```bash
 python -m pytest -q tests
 python run_pareto.py data/toy_instance.json
-python run_pareto.py data/medium_instance.json --time-per-solve 300
-python run_pareto.py data/large_instance.json --time-per-solve 60 --total-time 5400 --step jump
+python run_pareto.py data/medium_instance.json --time-per-solve 300 --threads 4
+python run_pareto.py data/large_instance.json --time-per-solve 60 --total-time 5400 --step jump --threads 4
+python run_pareto.py data/large_instance.json --lex sequential --time-per-solve 60 --total-time 3600 --step jump --threads 6
+python run_pareto.py data/large_instance.json --merge results/large results/large_sequential
 python benchmark.py
 ```
+
+An interrupted run can be restarted with the same command: it replays `checkpoint.jsonl` and continues.
 
 Each run writes to `results/<instance>/` the following files:
 - the front as CSV and JSON (the JSON includes every timetable);
@@ -330,13 +459,13 @@ Each run writes to `results/<instance>/` the following files:
 |---|---|
 | `src/io_parser.py` | JSON → `ProblemInstance` |
 | `src/models/gurobi_model.py` | MIP (`step` and `bigm` variants), ε limits, priority-order solves, warm start, `evaluate_schedule` and `check_feasibility` |
-| `src/algorithms/epsilon_constraint.py` | exact ε-constraint with level skipping, time budgets, exactness flag |
+| `src/algorithms/epsilon_constraint.py` | exact ε-constraint with level skipping, time budgets, exactness flag, weighted or sequential solves, checkpoint/resume |
 | `src/algorithms/pareto.py` | dominance, non-dominated filter, supported/unsupported test |
 | `src/visualization/plots.py` | objective-space figure (3-D + three 2-D projections) and decision-space timetable |
 | `src/generator.py` | synthetic instance generator |
-| `run_pareto.py` | computes and plots the front of one instance |
+| `run_pareto.py` | computes and plots the front of one instance; `--merge` combines finished runs |
 | `benchmark.py` | scalability study on generated instances |
-| `tests/` | 8 pytest tests |
+| `tests/` | 9 pytest tests |
 
 ---
 

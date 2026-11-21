@@ -1,0 +1,42 @@
+{
+  "instance": {
+    "name": "large_instance",
+    "horizon": 36,
+    "num_qualifications": 10,
+    "num_staff": 6,
+    "num_jobs": 25,
+    "total_workload_needed": 272,
+    "total_potential_capacity": 193
+  },
+  "objectives": [
+    "profit",
+    "max_projects",
+    "max_duration"
+  ],
+  "n_points": 13,
+  "n_supported": 10,
+  "lex": "sequential",
+  "step": "jump",
+  "time_per_solve": 60.0,
+  "n_mip_solves": 30,
+  "runtime_sec": 3651.96,
+  "exact": false,
+  "timed_out": true,
+  "ideal": {
+    "profit": 817.0,
+    "max_projects": 0,
+    "max_duration": 0
+  },
+  "nadir": {
+    "profit": 0.0,
+    "max_projects": 10,
+    "max_duration": 11
+  },
+  "recommended_id": 10,
+  "recommended": {
+    "profit": 370.0,
+    "max_projects": 6,
+    "max_duration": 3,
+    "late_projects": 0
+  }
+}

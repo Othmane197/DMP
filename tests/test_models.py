@@ -65,3 +65,14 @@ def test_generator_roundtrip(tmp_path):
         assert set(j.working_days_per_qualification) <= held
     sol = CompuOptiGurobiModel(inst, time_limit_sec=30).solve_single("profit")
     assert sol is not None and check_feasibility(inst, sol.schedule) == []
+
+
+def test_checkpoint_resume_gives_same_front(toy, tmp_path):
+    ck = tmp_path / "ck.jsonl"
+    first = epsilon_constraint(toy, log=lambda _: None, checkpoint_path=ck)
+    n_lines = len(ck.read_text().splitlines())
+    second = epsilon_constraint(toy, log=lambda _: None, checkpoint_path=ck)
+    names = first["objectives"]
+    assert [to_min(s, names) for s in first["front"]] == [to_min(s, names) for s in second["front"]]
+    assert second["exact"] == first["exact"]
+    assert len(ck.read_text().splitlines()) == n_lines  # nothing was re-solved

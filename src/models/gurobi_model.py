@@ -315,7 +315,8 @@ class CompuOptiGurobiModel:
         m.optimize()
         if m.SolCount == 0:
             return None
-        sol = self._extract("OPTIMAL" if m.Status == GRB.OPTIMAL else f"STATUS_{m.Status}")
+        names = {GRB.OPTIMAL: "OPTIMAL", GRB.TIME_LIMIT: "TIME_LIMIT", GRB.INTERRUPTED: "INTERRUPTED"}
+        sol = self._extract(names.get(m.Status, f"STATUS_{m.Status}"))
         return sol
 
     def solve_single(self, name: str) -> Optional[Solution]:
