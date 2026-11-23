@@ -1,0 +1,5 @@
+id,profit,max_duration,late_projects,max_projects,n_completed,supported,status
+0,65.0,2,0,4,4,True,OPTIMAL
+1,59.0,1,1,4,4,True,OPTIMAL
+2,45.0,1,0,3,3,True,OPTIMAL
+3,0.0,0,0,0,0,True,OPTIMAL

@@ -1,0 +1,11651 @@
+[
+ {
+  "id": 0,
+  "objectives": {
+   "profit": 817.0,
+   "max_projects": 7,
+   "max_duration": 11,
+   "late_projects": 2
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job11",
+   "Job13",
+   "Job16",
+   "Job17",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 33
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 35
+   }
+  ]
+ },
+ {
+  "id": 1,
+  "objectives": {
+   "profit": 817.0,
+   "max_projects": 8,
+   "max_duration": 10,
+   "late_projects": 2
+  },
+  "supported": false,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job11",
+   "Job13",
+   "Job16",
+   "Job17",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 33
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 35
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "objectives": {
+   "profit": 817.0,
+   "max_projects": 9,
+   "max_duration": 8,
+   "late_projects": 2
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job11",
+   "Job13",
+   "Job16",
+   "Job17",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 33
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 35
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "objectives": {
+   "profit": 814.0,
+   "max_projects": 8,
+   "max_duration": 9,
+   "late_projects": 2
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job1",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job13",
+   "Job16",
+   "Job17",
+   "Job20",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job17",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job17",
+    "qualification": "E",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job17",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 33
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "objectives": {
+   "profit": 789.0,
+   "max_projects": 10,
+   "max_duration": 7,
+   "late_projects": 3
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job1",
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job13",
+   "Job16",
+   "Job20",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job27",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 33
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 35
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "objectives": {
+   "profit": 783.0,
+   "max_projects": 8,
+   "max_duration": 7,
+   "late_projects": 2
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job13",
+   "Job16",
+   "Job20",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job27",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job27",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 5
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job27",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 33
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "objectives": {
+   "profit": 753.0,
+   "max_projects": 8,
+   "max_duration": 6,
+   "late_projects": 2
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job1",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job10",
+   "Job11",
+   "Job13",
+   "Job18",
+   "Job20",
+   "Job22",
+   "Job23",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job23",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 33
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 34
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "H",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job10",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "J",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job23",
+    "qualification": "G",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job10",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 33
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 35
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "objectives": {
+   "profit": 687.0,
+   "max_projects": 9,
+   "max_duration": 5,
+   "late_projects": 1
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job1",
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job13",
+   "Job16",
+   "Job18",
+   "Job20",
+   "Job21",
+   "Job22",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 34
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 36
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Liam",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 36
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job16",
+    "qualification": "H",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 27
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 28
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 29
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 30
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 34
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job16",
+    "qualification": "J",
+    "day": 36
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 33
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "objectives": {
+   "profit": 675.0,
+   "max_projects": 8,
+   "max_duration": 5,
+   "late_projects": 1
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job1",
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job11",
+   "Job13",
+   "Job18",
+   "Job20",
+   "Job21",
+   "Job22",
+   "Job24",
+   "Job25",
+   "Job28"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 26
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 27
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 28
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job11",
+    "qualification": "I",
+    "day": 29
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 31
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 32
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 33
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 28
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 29
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 28
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 29
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 34
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 35
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "H",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 33
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job28",
+    "qualification": "J",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 19
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 26
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 34
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 35
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 6
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 21
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 28
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job11",
+    "qualification": "C",
+    "day": 29
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 32
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 33
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 34
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 35
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "objectives": {
+   "profit": 584.0,
+   "max_projects": 8,
+   "max_duration": 4,
+   "late_projects": 2
+  },
+  "supported": true,
+  "status": "TIME_LIMIT(max_projects)",
+  "completed_jobs": [
+   "Job1",
+   "Job3",
+   "Job4",
+   "Job6",
+   "Job7",
+   "Job8",
+   "Job9",
+   "Job13",
+   "Job18",
+   "Job20",
+   "Job21",
+   "Job22",
+   "Job24",
+   "Job25"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 9
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 10
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 14
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job8",
+    "qualification": "I",
+    "day": 18
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 19
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 1
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 2
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job21",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job6",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 16
+   },
+   {
+    "staff": "Emma",
+    "job": "Job8",
+    "qualification": "B",
+    "day": 17
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 27
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 30
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Emma",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 1
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 2
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 3
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 4
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 25
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 26
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 27
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 30
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 31
+   },
+   {
+    "staff": "Liam",
+    "job": "Job7",
+    "qualification": "E",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 11
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 12
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 13
+   },
+   {
+    "staff": "Noah",
+    "job": "Job6",
+    "qualification": "D",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 22
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job9",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 31
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 32
+   },
+   {
+    "staff": "Noah",
+    "job": "Job7",
+    "qualification": "H",
+    "day": 33
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 4
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 5
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 6
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 22
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 23
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 24
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job9",
+    "qualification": "G",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 7
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 8
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 9
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job6",
+    "qualification": "C",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 23
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job9",
+    "qualification": "C",
+    "day": 24
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 25
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 26
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 27
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 30
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 31
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job7",
+    "qualification": "B",
+    "day": 32
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "objectives": {
+   "profit": 370.0,
+   "max_projects": 6,
+   "max_duration": 3,
+   "late_projects": 0
+  },
+  "supported": false,
+  "status": "OPTIMAL",
+  "completed_jobs": [
+   "Job1",
+   "Job2",
+   "Job3",
+   "Job4",
+   "Job13",
+   "Job18",
+   "Job20",
+   "Job21",
+   "Job22",
+   "Job24",
+   "Job25"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 1
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 2
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 3
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 4
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 5
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job25",
+    "qualification": "I",
+    "day": 6
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 11
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 12
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 13
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 15
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 16
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 22
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 25
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Emma",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 10
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 11
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 12
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 14
+   },
+   {
+    "staff": "Emma",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 15
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 19
+   },
+   {
+    "staff": "Emma",
+    "job": "Job2",
+    "qualification": "B",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 13
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Liam",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Liam",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 23
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "E",
+    "day": 24
+   },
+   {
+    "staff": "Liam",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 1
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "G",
+    "day": 2
+   },
+   {
+    "staff": "Noah",
+    "job": "Job21",
+    "qualification": "H",
+    "day": 3
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 4
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 5
+   },
+   {
+    "staff": "Noah",
+    "job": "Job25",
+    "qualification": "H",
+    "day": 6
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 9
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 14
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job24",
+    "qualification": "G",
+    "day": 16
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 19
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "C",
+    "day": 20
+   },
+   {
+    "staff": "Noah",
+    "job": "Job2",
+    "qualification": "D",
+    "day": 21
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 23
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 24
+   },
+   {
+    "staff": "Noah",
+    "job": "Job13",
+    "qualification": "D",
+    "day": 25
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 1
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 2
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job21",
+    "qualification": "F",
+    "day": 3
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 9
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 10
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 11
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 12
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 13
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 14
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 15
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job24",
+    "qualification": "J",
+    "day": 16
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 20
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 21
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job20",
+    "qualification": "F",
+    "day": 22
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 10
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 11
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 12
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "B",
+    "day": 13
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 14
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job1",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 17
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job4",
+    "qualification": "A",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 19
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 20
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job2",
+    "qualification": "A",
+    "day": 21
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "objectives": {
+   "profit": 115.0,
+   "max_projects": 3,
+   "max_duration": 2,
+   "late_projects": 0
+  },
+  "supported": false,
+  "status": "OPTIMAL",
+  "completed_jobs": [
+   "Job3",
+   "Job18",
+   "Job22"
+  ],
+  "schedule": [
+   {
+    "staff": "Amelia",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 17
+   },
+   {
+    "staff": "Amelia",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 18
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Emma",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Emma",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Liam",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 16
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 17
+   },
+   {
+    "staff": "Liam",
+    "job": "Job18",
+    "qualification": "E",
+    "day": 18
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 7
+   },
+   {
+    "staff": "Noah",
+    "job": "Job22",
+    "qualification": "H",
+    "day": 8
+   },
+   {
+    "staff": "Noah",
+    "job": "Job3",
+    "qualification": "C",
+    "day": 15
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Noah",
+    "job": "Job18",
+    "qualification": "H",
+    "day": 18
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 7
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job22",
+    "qualification": "G",
+    "day": 8
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 17
+   },
+   {
+    "staff": "Oliver",
+    "job": "Job18",
+    "qualification": "G",
+    "day": 18
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 15
+   },
+   {
+    "staff": "Olivia",
+    "job": "Job3",
+    "qualification": "A",
+    "day": 16
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "objectives": {
+   "profit": 0.0,
+   "max_projects": 0,
+   "max_duration": 0,
+   "late_projects": 0
+  },
+  "supported": true,
+  "status": "OPTIMAL",
+  "completed_jobs": [],
+  "schedule": []
+ }
+]

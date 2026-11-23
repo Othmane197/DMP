@@ -1,0 +1,108 @@
+{
+    "horizon": 10,
+    "qualifications": [
+        "A",
+        "B",
+        "C"
+    ],
+    "staff": [
+        {
+            "name": "Olivia",
+            "qualifications": [
+                "A",
+                "C"
+            ],
+            "vacations": [
+                1,
+                2,
+                6
+            ]
+        },
+        {
+            "name": "Liam",
+            "qualifications": [
+                "A",
+                "B",
+                "C"
+            ],
+            "vacations": [
+                2,
+                3,
+                9
+            ]
+        },
+        {
+            "name": "Emma",
+            "qualifications": [
+                "A",
+                "B",
+                "C"
+            ],
+            "vacations": [
+                8
+            ]
+        }
+    ],
+    "jobs": [
+        {
+            "name": "Job1",
+            "gain": 10,
+            "due_date": 6,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "A": 3
+            }
+        },
+        {
+            "name": "Job2",
+            "gain": 15,
+            "due_date": 8,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "A": 3,
+                "B": 3
+            }
+        },
+        {
+            "name": "Job3",
+            "gain": 20,
+            "due_date": 3,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "B": 2,
+                "A": 3,
+                "C": 2
+            }
+        },
+        {
+            "name": "Job4",
+            "gain": 25,
+            "due_date": 7,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "B": 2,
+                "A": 3,
+                "C": 2
+            }
+        },
+        {
+            "name": "Job5",
+            "gain": 15,
+            "due_date": 6,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "B": 1,
+                "C": 3
+            }
+        },
+        {
+            "name": "Job6",
+            "gain": 5,
+            "due_date": 3,
+            "daily_penalty": 3,
+            "working_days_per_qualification": {
+                "A": 2
+            }
+        }
+    ]
+}

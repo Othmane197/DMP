@@ -1,0 +1,8 @@
+{
+  "time_limit_s": 600,
+  "threads": 4,
+  "status": 2,
+  "best_profit": 817.0,
+  "upper_bound": 817.0,
+  "runtime_s": 12.7
+}

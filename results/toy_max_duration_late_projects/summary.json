@@ -1,0 +1,42 @@
+{
+  "instance": {
+    "name": "toy_instance",
+    "horizon": 5,
+    "num_qualifications": 3,
+    "num_staff": 3,
+    "num_jobs": 5,
+    "total_workload_needed": 14,
+    "total_potential_capacity": 13
+  },
+  "objectives": [
+    "profit",
+    "max_duration",
+    "late_projects"
+  ],
+  "n_points": 4,
+  "n_supported": 4,
+  "lex": "weighted",
+  "step": "safe",
+  "time_per_solve": 60.0,
+  "n_mip_solves": 4,
+  "runtime_sec": 0.25,
+  "exact": true,
+  "timed_out": false,
+  "ideal": {
+    "profit": 65.0,
+    "max_duration": 0,
+    "late_projects": 0
+  },
+  "nadir": {
+    "profit": 0.0,
+    "max_duration": 2,
+    "late_projects": 1
+  },
+  "recommended_id": 0,
+  "recommended": {
+    "profit": 65.0,
+    "max_projects": 4,
+    "max_duration": 2,
+    "late_projects": 0
+  }
+}

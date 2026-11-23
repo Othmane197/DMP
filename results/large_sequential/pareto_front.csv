@@ -1,0 +1,14 @@
+id,profit,max_projects,max_duration,late_projects,n_completed,supported,status
+0,817.0,7,11,2,17,True,TIME_LIMIT(max_projects)
+1,817.0,8,10,2,17,False,TIME_LIMIT(max_projects)
+2,817.0,9,8,2,17,True,TIME_LIMIT(max_projects)
+3,814.0,8,9,2,17,True,TIME_LIMIT(max_projects)
+4,789.0,10,7,3,18,True,TIME_LIMIT(max_projects)
+5,783.0,8,7,2,17,True,TIME_LIMIT(max_projects)
+6,753.0,8,6,2,17,True,TIME_LIMIT(max_projects)
+7,687.0,9,5,1,17,True,TIME_LIMIT(max_projects)
+8,675.0,8,5,1,17,True,TIME_LIMIT(max_projects)
+9,584.0,8,4,2,14,True,TIME_LIMIT(max_projects)
+10,370.0,6,3,0,11,False,OPTIMAL
+11,115.0,3,2,0,3,False,OPTIMAL
+12,0.0,0,0,0,0,True,OPTIMAL

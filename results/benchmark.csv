@@ -1,0 +1,13 @@
+instance,H,S,J,seed,n_vars,n_constrs,max_profit,profit_time_s,profit_optimal,front_points,front_solves,front_time_s,front_exact
+gen_H5_S3_J5_seed1,5,3,5,1,175,418,29.0,0.03,True,10,13,0.7,True
+gen_H5_S3_J5_seed2,5,3,5,2,242,625,62.0,0.06,True,12,17,1.5,True
+gen_H10_S3_J6_seed1,10,3,6,1,400,992,64.0,0.05,True,18,24,8.2,True
+gen_H10_S3_J6_seed2,10,3,6,2,542,1428,106.0,0.15,True,18,25,24.1,True
+gen_H12_S4_J8_seed1,12,4,8,1,751,1937,146.0,0.11,True,23,31,170.2,True
+gen_H12_S4_J8_seed2,12,4,8,2,788,2045,154.0,0.58,True,22,32,126.1,True
+gen_H15_S4_J10_seed1,15,4,10,1,1064,2708,127.0,0.08,True,15,26,7.4,True
+gen_H15_S4_J10_seed2,15,4,10,2,860,2106,219.0,0.22,True,26,40,131.3,True
+gen_H18_S5_J12_seed1,18,5,12,1,1560,4000,258.0,0.14,True,17,24,33.1,True
+gen_H18_S5_J12_seed2,18,5,12,2,1557,3978,215.0,1.87,True,15,22,301.4,False
+gen_H22_S5_J15_seed1,22,5,15,1,2232,5655,322.0,7.86,True,8,14,315.8,False
+gen_H22_S5_J15_seed2,22,5,15,2,1920,4750,309.0,28.2,True,9,15,303.5,False
