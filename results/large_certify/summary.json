@@ -1,0 +1,23 @@
+{
+  "objectives": [
+    "profit",
+    "max_projects",
+    "max_duration"
+  ],
+  "n_points": 57,
+  "n_mip_solves": 71,
+  "runtime_sec": 8031.9,
+  "exact": false,
+  "timed_out": false,
+  "certified_from": "results/large_merged_before_certify",
+  "time_per_solve": 120.0,
+  "global_ub": 817.0,
+  "boxes": 67,
+  "boxes_proven": 16,
+  "boxes_improved": 47,
+  "gap_pct_max": 37.98,
+  "gap_pct_median": 6.02,
+  "gap_pct_mean": 10.56,
+  "gap_before_pct_max": 46.54,
+  "gap_before_pct_median": 10.54
+}

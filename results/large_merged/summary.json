@@ -13,14 +13,15 @@
     "max_projects",
     "max_duration"
   ],
-  "n_points": 68,
-  "n_supported": 27,
+  "n_points": 73,
+  "n_supported": 29,
   "merged_from": [
     "results/large",
-    "results/large_sequential"
+    "results/large_sequential",
+    "results/large_certify"
   ],
-  "n_mip_solves": 133,
-  "runtime_sec": 9055.05,
+  "n_mip_solves": 204,
+  "runtime_sec": 17086.95,
   "exact": false,
   "timed_out": true,
   "ideal": {
@@ -33,11 +34,11 @@
     "max_projects": 10,
     "max_duration": 23
   },
-  "recommended_id": 34,
+  "recommended_id": 30,
   "recommended": {
-    "profit": 620.0,
+    "profit": 635.0,
     "max_projects": 4,
     "max_duration": 8,
-    "late_projects": 2
+    "late_projects": 0
   }
 }

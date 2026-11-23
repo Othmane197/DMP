@@ -278,7 +278,9 @@ class CompuOptiGurobiModel:
                 if m.SolCount == 0:
                     sol_found = False
                     break
-                if m.Status != GRB.OPTIMAL:
+                if m.Status != GRB.OPTIMAL and status == "OPTIMAL":
+                    # name the FIRST stage that was not proven: every stage before it is proven
+                    # (runs before 2026-11-23 named the last one, which proves nothing)
                     status = f"TIME_LIMIT({name})"
                 best = round(m.ObjVal)  # all objectives are integer-valued
                 if sense == GRB.MINIMIZE:

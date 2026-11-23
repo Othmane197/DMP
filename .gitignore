@@ -54,7 +54,9 @@ outputs/
 *.png
 *.html
 !results/**/*.png
-results/**/checkpoint.jsonl
+!docs/report/report_template.html
+!docs/slides/*.png
+# results/**/checkpoint.jsonl are kept: they are the per-solve logs (status, runtime) behind the report
 results/benchmark_checkpoints/
 !data/*.json
 
