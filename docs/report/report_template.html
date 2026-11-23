@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CompuOpti staffing: project report</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]});"></script>
+<style>
+  @page { size: A4; margin: 17mm 17mm 18mm 17mm;
+          @bottom-center { content: counter(page); font: 9pt Calibri, sans-serif; color: #666; } }
+  :root { --ink: #1d2433; --muted: #5b6475; --rule: #d5dae3; --accent: #8a1538; --soft: #f4f6f9; }
+  html { background: #fff; }
+  body { font-family: Cambria, Georgia, serif; font-size: 10.6pt; line-height: 1.42; color: var(--ink);
+         max-width: 178mm; margin: 0 auto; background: #fff; }
+  h1 { font-family: Calibri, "Segoe UI", sans-serif; font-size: 20pt; margin: 0 0 4pt; color: var(--accent); line-height: 1.15; }
+  h2 { font-family: Calibri, "Segoe UI", sans-serif; font-size: 14pt; margin: 16pt 0 5pt; color: var(--accent);
+       border-bottom: 1px solid var(--rule); padding-bottom: 2pt; break-after: avoid; }
+  h3 { font-family: Calibri, "Segoe UI", sans-serif; font-size: 11.5pt; margin: 11pt 0 3pt; break-after: avoid; }
+  p { margin: 4pt 0 6pt; text-align: justify; }
+  .subtitle { font-family: Calibri, "Segoe UI", sans-serif; color: var(--muted); font-size: 11pt; margin-bottom: 10pt; }
+  .abstract { background: var(--soft); border-left: 3px solid var(--accent); padding: 7pt 10pt; margin: 8pt 0 10pt; }
+  table { border-collapse: collapse; margin: 6pt auto 8pt; font-size: 9.2pt; break-inside: avoid; }
+  th, td { border-bottom: 1px solid var(--rule); padding: 2.5pt 7pt; text-align: right; vertical-align: top; }
+  th { border-bottom: 1.5px solid var(--ink); font-family: Calibri, "Segoe UI", sans-serif; font-weight: 600; }
+  td.l, th.l { text-align: left; }
+  caption { caption-side: bottom; font-size: 8.8pt; color: var(--muted); padding-top: 3pt; text-align: left; }
+  figure { margin: 8pt 0 10pt; text-align: center; break-inside: avoid; }
+  figure img { max-width: 100%; }
+  figcaption { font-size: 8.8pt; color: var(--muted); text-align: left; margin-top: 3pt; }
+  .eq { display: grid; grid-template-columns: 3.2em 1fr 18em; align-items: center; column-gap: 6pt;
+        margin: 2pt 0; break-inside: avoid; }
+  .eq .tag { font-family: Calibri, sans-serif; font-weight: 600; color: var(--accent); }
+  .eq .why { font-size: 9pt; color: var(--muted); }
+  .box { border: 1px solid var(--rule); border-radius: 3pt; padding: 6pt 9pt; margin: 7pt 0; break-inside: avoid; }
+  .box b.title { font-family: Calibri, sans-serif; color: var(--accent); }
+  pre { font-family: Consolas, monospace; font-size: 8.8pt; background: var(--soft); padding: 7pt 9pt;
+        border-radius: 3pt; line-height: 1.35; break-inside: avoid; white-space: pre-wrap; }
+  code { font-family: Consolas, monospace; font-size: 9pt; }
+  ul, ol { margin: 3pt 0 6pt 16pt; padding: 0; } li { margin: 1.5pt 0; }
+  .muted { color: var(--muted); } .small { font-size: 9pt; }
+  .warn { border-left: 3px solid #c77700; background: #fff7eb; padding: 5pt 9pt; margin: 7pt 0; break-inside: avoid; }
+  .pagebreak { break-before: page; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; }
+</style>
+</head>
+<body>
+
+<h1>Staffing collaborators on projects:<br>a multi-objective MILP for CompuOpti</h1>
+<div class="subtitle">Decision Modelling project (V. Mousseau), CentraleSupélec MSc AI 2026–27 · {{GROUP}} · {{DATE}}<br>
+Code and results: <code>github.com/Othmane197/DMP</code></div>
+
+<div class="abstract"><b>Summary.</b> We model CompuOpti's staffing and scheduling problem as a mixed-integer linear program (MILP) with four criteria:
+profit (max), the largest number of projects any employee works on (min), the longest project duration (min) and the number of late projects (min).
+We compute the non-dominated set for the first three criteria with an <b>ε-constraint method</b> that is exact whenever every sub-problem is solved to optimality and, unlike a weighted sum, also returns <b>unsupported</b> solutions.
+On the toy and medium instances the fronts are <b>proven complete</b> ({{TOY_N}} and {{MED_N}} non-dominated points; on medium, {{MED_UNSUP}} of them are unsupported).
+On the large instance the front is <b>approximate</b> ({{LARGE_N}} non-dominated points found), so we certify it point by point with the solver's upper bounds. {{CERT_SENTENCE}}
+An instance generator and a benchmark on 12 generated instances show where exact computation stops being practical.</div>
+
+<h2>1. Problem and data</h2>
+<p>CompuOpti assigns engineers to client projects over a horizon of \(H\) working days. Each engineer holds some qualifications and has leave days; each project needs a number of person-days per qualification, earns a gain if it is <i>completed</i> within the horizon and pays a daily penalty for every day it finishes after its due date.
+A schedule assigns each engineer-day either to one (project, qualification) pair or to nothing. The subject imposes five rules: <b>qualification</b>, <b>daily uniqueness</b> (one project and one qualification per engineer and day), <b>leave</b>, <b>coverage</b> (a project counts as completed only if every qualification requirement is fully covered) and <b>execution uniqueness</b> (a project is executed at most once).</p>
+
+{{INSTANCE_TABLE}}
+
+<p><b>Demand exceeds capacity on every instance</b> (last columns of Table&nbsp;1): even with perfect flexibility, {{UNDOABLE_RANGE}} of the requested work cannot be done. Choosing <i>which</i> projects to complete is therefore part of the decision, exactly as the subject anticipates (“bearing in mind that not all projects can always be staffed”). A project can be completed late, but only inside the horizon; the data say nothing about work after day \(H\).</p>
+
+<h2>2. Mathematical model</h2>
+
+<h3>2.1 Sets and parameters (data)</h3>
+<table>
+<tr><th class="l">Symbol</th><th class="l">Meaning</th></tr>
+<tr><td class="l">\(T=\{1,\dots,H\}\)</td><td class="l">working days of the horizon</td></tr>
+<tr><td class="l">\(S,\ Q,\ J\)</td><td class="l">staff members, qualifications, projects</td></tr>
+<tr><td class="l">\(Q_s\subseteq Q\)</td><td class="l">qualifications of staff member \(s\)</td></tr>
+<tr><td class="l">\(V_s\subseteq T\)</td><td class="l">leave days of \(s\)</td></tr>
+<tr><td class="l">\(n_{jq}\in\mathbb{N}\)</td><td class="l">person-days of qualification \(q\) required by project \(j\); \(Q_j=\{q: n_{jq}>0\}\)</td></tr>
+<tr><td class="l">\(G_j,\ d_j,\ c_j\)</td><td class="l">gain, due date and daily lateness penalty of project \(j\)</td></tr>
+<tr><td class="l">\(\mathcal{A}\)</td><td class="l">admissible assignments: \(\{(s,j,q,t): q\in Q_s\cap Q_j,\ t\in T\setminus V_s\}\)</td></tr>
+</table>
+
+<h3>2.2 Decision variables</h3>
+<table>
+<tr><th class="l">Variable</th><th class="l">Domain</th><th class="l">Interpretation</th></tr>
+<tr><td class="l">\(x_{sjqt}\)</td><td class="l">\(\{0,1\}\), \((s,j,q,t)\in\mathcal{A}\)</td><td class="l">1 if \(s\) works on qualification \(q\) of project \(j\) on day \(t\) (the schedule itself)</td></tr>
+<tr><td class="l">\(y_j\)</td><td class="l">\(\{0,1\}\), \(j\in J\)</td><td class="l">1 if project \(j\) is completed within the horizon</td></tr>
+<tr><td class="l">\(z_{sj}\)</td><td class="l">\(\{0,1\}\)</td><td class="l">1 if \(s\) works at least one day on \(j\)</td></tr>
+<tr><td class="l">\(b_{jt}\)</td><td class="l">\(\{0,1\}\), \(t\in T\)</td><td class="l">1 if \(j\) has <i>begun</i> on or before day \(t\) (code: <code>st</code>)</td></tr>
+<tr><td class="l">\(e_{jt}\)</td><td class="l">\(\{0,1\}\), \(t\in T\); \(e_{j0}:=0\)</td><td class="l">1 if \(j\) has <i>ended</i> on or before day \(t\) (code: <code>fi</code>)</td></tr>
+<tr><td class="l">\(u_j\)</td><td class="l">\(\{0,1\}\)</td><td class="l">1 if \(j\) is completed after its due date</td></tr>
+<tr><td class="l">\(P,\ D\)</td><td class="l">\(\mathbb{Z}_{\ge 0}\)</td><td class="l">max number of projects per employee; max project duration</td></tr>
+</table>
+<p>The <b>qualification</b> and <b>leave</b> rules hold <i>by construction</i>: a variable \(x_{sjqt}\) is only created when \(s\) has \(q\), \(j\) needs \(q\) and \(t\) is not a leave day of \(s\). This also removes most of the variables (Table&nbsp;1, last column).</p>
+
+<h3>2.3 Constraints</h3>
+<div class="eq"><span class="tag">(C1)</span><span>\(\displaystyle\sum_{(j,q):(s,j,q,t)\in\mathcal{A}} x_{sjqt}\le 1\quad \forall s\in S,\ t\in T\)</span><span class="why">daily uniqueness</span></div>
+<div class="eq"><span class="tag">(C2)</span><span>\(\displaystyle\sum_{(s,t):(s,j,q,t)\in\mathcal{A}} x_{sjqt}= n_{jq}\,y_j\quad \forall j\in J,\ q\in Q_j\)</span><span class="why">coverage <i>and</i> execution uniqueness: a completed project gets exactly its person-days, an uncompleted one none (no wasted partial work); if no admissible \(x\) exists for \((j,q)\), \(y_j=0\)</span></div>
+<div class="eq"><span class="tag">(C3)</span><span>\(x_{sjqt}\le z_{sj},\qquad z_{sj}\le \sum_{q,t} x_{sjqt}\)</span><span class="why">\(z_{sj}=1\) iff \(s\) works on \(j\)</span></div>
+<div class="eq"><span class="tag">(C4)</span><span>\(b_{j,t-1}\le b_{jt},\quad e_{j,t-1}\le e_{jt},\quad e_{jt}\le b_{jt}\)</span><span class="why">“begun” and “ended” are switches that stay on</span></div>
+<div class="eq"><span class="tag">(C5)</span><span>\(b_{jH}=e_{jH}=y_j\quad \forall j\)</span><span class="why">a completed project begins and ends inside the horizon; an uncompleted one never begins</span></div>
+<div class="eq"><span class="tag">(C6)</span><span>\(x_{sjqt}\le b_{jt},\qquad x_{sjqt}\le 1-e_{j,t-1}\)</span><span class="why">work only while the project is open</span></div>
+<div class="eq"><span class="tag">(C7)</span><span>\(\displaystyle D\ge \sum_{t\in T}\big(b_{jt}-e_{j,t-1}\big)\quad\forall j\)</span><span class="why">the sum counts the open days, i.e. the duration</span></div>
+<div class="eq"><span class="tag">(C8)</span><span>\(u_j\ge y_j-e_{j,d_j}\quad \forall j: d_j\lt H\)</span><span class="why">late = completed but not ended by the due date</span></div>
+<div class="eq"><span class="tag">(C9)</span><span>\(\displaystyle P\ge \sum_{j} z_{sj}\quad\forall s\)</span><span class="why">max projects per employee</span></div>
+<p>The number of days project \(j\) is late is the linear expression \(\;L_j=\sum_{t=d_j+1}^{H}\big(y_j-e_{j,t-1}\big)\): the days after the due date on which a completed project has not yet ended.</p>
+
+<h3>2.4 Criteria</h3>
+<div class="eq"><span class="tag">f1</span><span>\(\displaystyle \max\ \sum_{j\in J}\big(G_j\,y_j-c_j\,L_j\big)\)</span><span class="why">profit: gains of completed projects minus lateness penalties</span></div>
+<div class="eq"><span class="tag">f2</span><span>\(\min\ P\)</span><span class="why">projects of the busiest engineer (“minimise the number of projects an employee works on”)</span></div>
+<div class="eq"><span class="tag">f3</span><span>\(\min\ D\)</span><span class="why">longest calendar duration, first to last worked day (“minimise the actual execution time”)</span></div>
+<div class="eq"><span class="tag">f4</span><span>\(\min\ \sum_j u_j\)</span><span class="why">number of late projects</span></div>
+<p>f2 and f3 are “min–max” readings: they protect the worst-off engineer and the longest project. Sums (total projects per engineer, total duration) are equally defensible and would give a different front; the code can be switched by changing one expression. The search uses three criteria at a time (f1, f2, f3 by default); f4 is computed and reported for every solution and can replace f2 or f3 (§5.4).</p>
+
+<div class="box"><b class="title">Proposition 1 (the time encoding is exact).</b>
+Let \(x\) satisfy (C1)–(C3) and let \(F_j\) and \(E_j\) be the first and last worked days of a completed project \(j\).
+(i) Setting \(b_{jt}=\mathbb{1}[t\ge F_j]\) and \(e_{jt}=\mathbb{1}[t\ge E_j]\) (all zero if \(y_j=0\)) satisfies (C4)–(C6) and gives \(\sum_t(b_{jt}-e_{j,t-1})=E_j-F_j+1\) and \(L_j=\max(0,E_j-d_j)\).
+(ii) Conversely, for any \((b,e)\) satisfying (C4)–(C6), (C6) forces \(b_{jt}=1\) for \(t\ge F_j\) and \(e_{jt}=0\) for \(t\lt E_j\), hence \(\sum_t(b_{jt}-e_{j,t-1})\ge E_j-F_j+1\) and \(L_j\ge\max(0,E_j-d_j)\).
+<br><span class="small">Consequence: a bound \(D\le\varepsilon\) keeps exactly the schedules whose longest project lasts at most \(\varepsilon\) days, and maximising f1 drives \(L_j\) to the true lateness. The model never mis-reports a schedule; in addition, every reported value is recomputed from \(x\) alone (§4).</span></div>
+
+<h3>2.5 Modelling choices worth discussing</h3>
+<ul>
+<li><b>Projects are optional and all-or-nothing</b> (C2). Completing everything is impossible (demand &gt; capacity), so dropping projects is part of the decision; partial work earns nothing and is forbidden.</li>
+<li><b>Several engineers may share a (project, qualification) on the same day</b>; the subject's own example does it (day 2: Alice and Charlie on “I, A”). It shortens projects and the solver uses it heavily. We therefore assume person-days are perfectly splittable (two people for one day = one person for two days), which ignores coordination costs.</li>
+<li><b>Why the “switch” variables \(b,e\)?</b> The obvious encoding (start and end days as integers, linked to \(x\) with big-M constraints) is correct but has a weak LP relaxation. On medium, the switch formulation proved optimality in 40–57&nbsp;s where big-M was still unproven after 120&nbsp;s (§5.6), despite having {{STEP_VS_BIGM_VARS}} more variables. Both are kept in the code (<code>formulation="step"|"bigm"</code>).</li>
+</ul>
+
+<h2>3. Computing the non-dominated set</h2>
+<p>A schedule \(a\) <b>dominates</b> \(b\) if it is at least as good on every criterion and strictly better on one; the <b>non-dominated set</b> (Pareto front) contains every schedule that no other schedule dominates. A non-dominated point is <b>supported</b> if it optimises some weighted sum of the criteria with strictly positive weights, and <b>unsupported</b> otherwise. With integer variables, unsupported points exist and are invisible to any weighted-sum method (MOCO lecture). On our two exact fronts they are {{TOY_UNSUP}} of {{TOY_N}} (toy) and {{MED_UNSUP}} of {{MED_N}} (medium) points (§5), which rules out the weighted-sum approach.</p>
+
+<h3>3.1 ε-constraint with lexicographic sub-problems</h3>
+<p>Profit is kept as the objective and f2, f3 become upper bounds \(k\) and \(\varepsilon\), swept downwards. Each sub-problem returns the <b>lexicographic</b> optimum (max f1, then min f3, then min f2), so that it never returns a weakly dominated point:</p>
+<pre>F ← ∅ ;  k ← |J|                                   # bound on f2
+while k ≥ 0:
+    ε ← H ;  m ← -1                                  # bound on f3 ; largest f2 seen at this level
+    while ε ≥ 0:
+        p ← lex-opt( max f1, min f3, min f2 )  s.t.  f2 ≤ k,  f3 ≤ ε     # warm start from F
+        if no feasible schedule: break
+        F ← F ∪ {p} ;  m ← max(m, f2(p))
+        ε ← f3(p) − 1                                # ask for something strictly shorter
+    if m &lt; 0: stop
+    k ← min(k, m) − 1                                # level skipping
+return the non-dominated points of F</pre>
+
+<div class="box"><b class="title">Proposition 2 (exactness).</b> If every sub-problem is solved to optimality, every non-dominated objective vector is returned.
+<span class="small"><i>Proof sketch.</i> Let \(p^*\) be non-dominated. Level \(k=f_2(p^*)\) is visited (level skipping only skips levels \(k'\) with \(m\le k'\lt k\), on which every point found at level \(k\) is still feasible and still lexicographically optimal, so those levels would return the same points). At that level the bounds \(\varepsilon\) decrease strictly; take the last visited \(\varepsilon\ge f_3(p^*)\). Its answer \(q\) satisfies \(f_1(q)\ge f_1(p^*)\) (since \(p^*\) is feasible), \(f_2(q)\le k\), and \(f_3(q)\le f_3(p^*)\) (otherwise the next bound \(f_3(q)-1\) would still be \(\ge f_3(p^*)\)). So \(q\) weakly dominates \(p^*\); as \(p^*\) is non-dominated, \(q\) and \(p^*\) have the same objective vector. All criteria are integers (integer gains and penalties), so stepping bounds by one unit skips nothing.</span></div>
+
+<h3>3.2 Making each sub-problem fast</h3>
+<ul>
+<li><b>One MIP instead of three.</b> Because every criterion is an integer with a known range, the lexicographic order equals the single objective
+\(\min\ -(|J|+1)(H+1)\,f_1+(|J|+1)\,f_3+f_2\): one unit of profit outweighs any change of f3 and f2 together. On medium this was 1.7–5× faster than three successive solves (§5.6). On large it is the opposite (the weighted MIP rarely proves optimality while profit alone is proven in 13&nbsp;s), so a <code>--lex sequential</code> mode solves profit, then f3, then f2, freezing each value.</li>
+<li><b>Warm start.</b> Each sub-problem starts from the most profitable schedule already found that satisfies the current bounds, so a time-limited solve can never return something worse than what is known.</li>
+<li><b>Time limits.</b> After an unproven solve, <code>--step safe</code> lowers \(\varepsilon\) by one only (keeps coverage); <code>--step jump</code> jumps below the value found (fast, for fronts that are approximate anyway). The result records whether every solve was proven (<code>"exact"</code> flag).</li>
+<li><b>Checkpointing.</b> Every finished solve is appended to a log, so an interrupted run resumes where it stopped (tested).</li>
+</ul>
+
+<h3>3.3 Supported or not, and which schedule to recommend</h3>
+<p>For each front point \(p\) a small LP searches for weights \(\lambda\ge\delta\), \(\sum_i\lambda_i=1\), such that \(\lambda\cdot(p-q)\le 0\) for every other front point \(q\) (criteria normalised to \([0,1]\), all in minimisation form), maximising \(\delta\); \(p\) is supported iff \(\delta^*\gt 0\). On an exact front this is the true status; on an approximate front it is relative to the points found.</p>
+<p>The method delivers a <i>menu</i>; choosing is the decision maker's role. As a neutral starting point the code highlights the point minimising the <b>weighted Tchebychev distance</b> to the ideal point with equal weights (criteria scaled between ideal and nadir, empty schedule excluded). Equal weights are an arbitrary choice, not a model of Margaux's preferences: the natural next step is preference elicitation, e.g. asking her to rank a few front schedules and fitting an additive value model with UTA (course), which we did not do.</p>
+
+<h2>4. Implementation and validation</h2>
+<p>Python 3.11 + Gurobi 13.0.3 (academic licence), about {{LOC}} lines of code:</p>
+<table>
+<tr><th class="l">File</th><th class="l">Role</th></tr>
+<tr><td class="l"><code>src/models/gurobi_model.py</code></td><td class="l">MILP (switch and big-M variants), ε bounds, lexicographic solves, warm start, independent evaluator and feasibility checker</td></tr>
+<tr><td class="l"><code>src/algorithms/epsilon_constraint.py</code></td><td class="l">ε-constraint with level skipping, time budgets, exactness flag, checkpoint/resume</td></tr>
+<tr><td class="l"><code>src/algorithms/pareto.py</code></td><td class="l">dominance, non-dominated filter, supported/unsupported LP</td></tr>
+<tr><td class="l"><code>src/visualization/plots.py</code></td><td class="l">objective space (3-D + three 2-D projections) and decision space (timetable)</td></tr>
+<tr><td class="l"><code>src/generator.py</code>, <code>benchmark.py</code></td><td class="l">instance generator; scalability study</td></tr>
+<tr><td class="l"><code>run_pareto.py</code>, <code>certify_front.py</code></td><td class="l">front of one instance (+ merge of runs); quality certificate of an approximate front</td></tr>
+</table>
+<p><b>Trust.</b> (1) Every schedule is re-checked by code that ignores the solver (skills, leave, one task per day, exact coverage); a run refuses to save a schedule that fails. (2) All criteria are <i>recomputed from the timetable</i>, not read from solver variables. (3) Nine automated tests pass, including: toy maximum profit = 65; the checker catches deliberate violations; every pair of toy front points is mutually non-dominated; the generator never creates impossible projects; resuming from a checkpoint gives the same front.</p>
+
+<h2>5. Results</h2>
+<p class="small muted">All timings are single runs on one 8-thread laptop; medium and large ran in parallel (4 threads each), so read them as orders of magnitude.</p>
+
+<h3>5.1 Toy instance: exact front</h3>
+<p>{{TOY_N}} non-dominated schedules, {{TOY_SOLVES}} MIP solves, under a second, every solve proven optimal.</p>
+{{TOY_TABLE}}
+<p>Reading it: going from 65 to 55 drops Job5 (gain 10), but then no engineer works on more than 2 projects and no project lasts more than 2 days. Points #6–#8 are unsupported: a weighted sum would never show them. The empty schedule is always non-dominated (nothing beats 0 projects and 0 days); it is kept for completeness and excluded from recommendations.</p>
+<figure><img src="../../results/toy/objective_space.png" style="width:100%">
+<figcaption>Figure 1. Toy, objective space: 3-D view and the three 2-D projections. Blue = supported, orange = unsupported, red circle = Tchebychev compromise (#{{TOY_REC}}).</figcaption></figure>
+<div class="two">
+<figure><img src="../../results/toy/schedule_compromise.png" style="width:100%"><figcaption>Figure 2. Decision space, compromise #{{TOY_REC}}: rows = engineers (skills), columns = days, hatched = leave.</figcaption></figure>
+<figure><img src="../../results/toy/schedule_max_profit.png" style="width:100%"><figcaption>Figure 3. Decision space, a maximum-profit schedule (65).</figcaption></figure>
+</div>
+
+<h3>5.2 Medium instance: exact front</h3>
+<p>{{MED_N}} non-dominated schedules ({{MED_SUP}} supported, <b>{{MED_UNSUP}} unsupported</b>), {{MED_SOLVES}} MIP solves, {{MED_MIN}} minutes in total; every solve was proven optimal (300&nbsp;s limit per solve, never reached; median {{MED_MEDIAN}}&nbsp;s, slowest {{MED_SLOWEST}}&nbsp;s).</p>
+{{MED_KEYROWS}}
+<div class="two">
+{{MED_PRICE_DURATION}}
+{{MED_PRICE_FOCUS}}
+</div>
+<p><b>What it tells the CEO.</b> Each limit <i>alone</i> is cheap down to a point: projects ≤ 5 days costs 7 of 413 (1.7%), engineers on ≤ 4 projects costs 8 (1.9%). Below that, losses grow fast (3-day projects cost over a third of the profit, one project per engineer half). But <b>limits interact</b>: imposing both of the cheap limits at once costs 48 (365, −11.6%), whereas ≤ 6-day projects with ≤ 5 projects per engineer still earn 403 (−2.4%). Figure&nbsp;4 gives the optimal profit for every pair of limits: this table <i>is</i> the menu the decision maker chooses from, and on an exact front every entry is a proven optimum.</p>
+<figure><img src="../slides/heatmap_medium.png" style="width:66%">
+<figcaption>Figure 4. Medium: optimal profit for each pair of limits (max projects per engineer ≤ k, longest project ≤ e days), read off the exact front. Framed: the Tchebychev compromise (k = 3, e = 5: 322) and a cheap combination (k = 5, e = 6: 403).</figcaption></figure>
+<figure><img src="../../results/medium/objective_space.png" style="width:100%">
+<figcaption>Figure 5. Medium, objective space ({{MED_UNSUP}} of {{MED_N}} points unsupported, i.e. missed by any weighted sum).</figcaption></figure>
+<figure><img src="../../results/medium/schedule_compromise.png" style="width:92%">
+<figcaption>Figure 6. Medium, decision space of the Tchebychev compromise.</figcaption></figure>
+
+<h3>5.3 Large instance: approximate front with a quality certificate</h3>
+<p>Here the sub-problems can no longer be proven optimal within a minute, so the front is an <b>approximation</b>: every schedule is feasible and checked, but better trade-offs may exist. We ran two strategies (A, B) and merged them; then a third run (C) measured how far each point can be from the truth and replaced the points it could improve.</p>
+{{LARGE_RUNS}}
+<p>A separate profit-only solve proved the maximum profit is <b>817</b> in 13&nbsp;s. The weighted run (A) stopped at 811: the combined objective is much harder to <i>prove</i> than profit alone, which motivated the sequential mode (B), which found 817 immediately.</p>
+{{LARGE_CERT}}
+<figure><img src="../slides/certificate_large.png" style="width:66%">
+<figcaption>Figure 7. Large: certified gap of every pair of limits checked, for the first approximation (hollow) and after the certificate (filled); a line joins the two states of the same pair. Shaded: profits within 10% of the maximum.</figcaption></figure>
+{{LARGE_KEYROWS}}
+<div class="two">
+{{LARGE_PRICE_DURATION}}
+{{LARGE_PRICE_FOCUS}}
+</div>
+<p>The shape is the same as on medium: flat for loose limits, collapsing for tight ones. These are profits <i>found</i>, i.e. lower bounds on the best achievable, so every loss shown is an <i>upper</i> bound on the true loss.</p>
+<figure><img src="../../results/large_merged/objective_space.png" style="width:100%">
+<figcaption>Figure 8. Large, objective space of the merged approximate front. Supported/unsupported labels are relative to the points found.</figcaption></figure>
+
+<h3>5.4 Late projects as a search criterion (toy)</h3>
+<p>The code accepts any two of f2, f3, f4 as bounded criteria. On the toy instance the late-projects criterion barely conflicts with profit: the maximum profit (65) is already reached with no late project.</p>
+{{TOY_F4_TABLE}}
+
+<h3>5.5 Generated instances: where exactness stops</h3>
+<p>The generator reproduces the structure of the given instances (gains, 3/day penalty, 1–3 skills per project, ~10% leave, demand/capacity 1.3 by default) and guarantees that every required skill exists in the team. We generated 6 sizes × 2 seeds and timed the max-profit solve (120&nbsp;s limit) and the full front (30&nbsp;s per solve, 300&nbsp;s budget per front).</p>
+{{BENCH_TABLE}}
+<figure><img src="../../results/benchmark.png" style="width:88%"><figcaption>Figure 9. Benchmark on generated instances.</figcaption></figure>
+<p><b>Findings.</b> Maximum profit alone stays easy (proven on all 12 instances, at most 28&nbsp;s). The full front is what gets hard: every front with up to about 1,000 variables was exact within 5 minutes; from about 1,500 variables, 3 of 4 fronts exhausted the budget. Two instances of the same size can differ by a factor of 18 in time, so two seeds per size show <i>where</i> it stops being easy, not a scaling law.</p>
+
+<h3>5.6 Formulation and solve strategy</h3>
+<table>
+<tr><th class="l">Medium instance, same question</th><th>Big-M</th><th>Switch (b, e)</th></tr>
+<tr><td class="l">max f1, then min f2, then min f3</td><td>not proven (120 s limit)</td><td>proven, 40 s</td></tr>
+<tr><td class="l">max f1, then min f3, then min f2</td><td>not proven (120 s limit)</td><td>proven, 57 s</td></tr>
+<caption>Table. Encoding of the time structure (single runs, three successive solves).</caption>
+</table>
+<table>
+<tr><th class="l">Medium instance, same question</th><th>3 successive solves</th><th>1 weighted solve</th></tr>
+<tr><td class="l">max f1, then f2, then f3</td><td>40 s</td><td>24 s</td></tr>
+<tr><td class="l">max f1, then f3, then f2</td><td>57 s</td><td>12 s</td></tr>
+<tr><td class="l">same, with f2 ≤ 3 and f3 ≤ 6</td><td>not proven, 192 s</td><td>proven, 63 s</td></tr>
+<caption>Table. Lexicographic optimisation: sequential vs single weighted MIP (single runs). On large the ranking reverses (§5.3).</caption>
+</table>
+
+<h2>6. Limitations (most serious first)</h2>
+<ol>
+<li><b>The large front is an approximation.</b> {{LIM_LARGE}}</li>
+<li><b>Exactness does not scale.</b> The method is exact only if every sub-problem is proven optimal; the benchmark locates the limit around 1,500 binary variables for a 5-minute budget. The subject suggests approximate methods for that regime; we only have a time-limited version of the exact method, not a dedicated heuristic (e.g. local search or a matheuristic) to compare with.</li>
+<li><b>Thin scalability evidence:</b> 12 generated instances, 2 seeds per size, single runs.</li>
+<li><b>Criteria are interpretations</b> (min–max for f2 and f3; sums would give another front), and f4 is reported but only searched on the toy instance.</li>
+<li><b>The recommended compromise is not preference-based</b> (equal Tchebychev weights); eliciting the CEO's preferences (e.g. UTA on a ranking of a few schedules) is the missing step.</li>
+<li><b>Person-days are perfectly splittable</b> and every engineer is equally productive.</li>
+</ol>
+
+<h2>7. Conclusion</h2>
+<p>A compact time-indexed MILP, in which the “begun/ended” switches replace big-M constraints, makes each sub-problem tractable, and an ε-constraint sweep with lexicographic sub-problems computes the complete non-dominated set, unsupported points included, whenever the solver can prove optimality. That is the case on the toy and medium instances, which yields exact trade-off tables a decision maker can read directly (on medium, ≤ 5-day projects alone or ≤ 4 projects per engineer alone each cost under 2% of profit, but imposing both costs 11.6%, while ≤ 6-day projects with ≤ 5 projects per engineer together cost 2.4%). On the large instance we deliver the best trade-offs found together with a per-point upper bound, which is the honest form of an approximate answer. The certificate also taught us something: a time-limited run can return a front that looks complete while most of its points are dominated, so an approximate front should not be reported without such bounds. The natural continuations are a dedicated heuristic for large instances and a preference-elicitation step to turn the menu into a recommendation.</p>
+
+<h3>Appendix A. Reproducing the results</h3>
+<pre>pip install -r requirements.txt          # gurobipy 13.0.3 + academic licence, matplotlib, pytest
+python -m pytest -q tests                # 9 tests, ~5 s
+python run_pareto.py data/toy_instance.json                                   # < 1 s
+python run_pareto.py data/medium_instance.json --time-per-solve 300 --threads 4   # ~53 min
+python run_pareto.py data/large_instance.json --time-per-solve 60 --total-time 5400 --step jump --threads 4
+python run_pareto.py data/large_instance.json --lex sequential --time-per-solve 60 --total-time 3600 --step jump --threads 6
+python run_pareto.py data/large_instance.json --merge results/large results/large_sequential
+    # writes results/large_merged; we copied it to results/large_merged_before_certify (input of the certificate)
+python certify_front.py data/large_instance.json results/large_merged_before_certify --time-per-solve 120 --level 1 --global-ub 817
+    # ~2 h; replays instantly from results/large_certify/certificate.jsonl
+python run_pareto.py data/large_instance.json --merge results/large results/large_sequential results/large_certify
+python run_pareto.py data/toy_instance.json --secondary max_projects late_projects
+python benchmark.py                                                           # ~24 min
+python docs/slides/make_slide_figures.py # Figures 4 and 7
+python docs/report/build_report.py       # rebuilds this report from results/</pre>
+<p class="small muted">Each run writes to <code>results/&lt;instance&gt;/</code>: the front (CSV, and JSON with every timetable), the objective-space and timetable figures, and <code>summary.json</code> whose <code>"exact"</code> field states whether the front is proven complete.</p>
+
+</body>
+</html>
