@@ -1,6 +1,8 @@
 # DMP — CompuOpti Staff Scheduling & Project Allocation
 > **MSc Artificial Intelligence — Decision Modeling** (CentraleSupélec & École Centrale Casablanca)
 
+**Group:** Othmane MAAMAR, Ronita Chakraborty, Balvinder Singh
+
 Multi-objective staffing of engineers on client projects for the company *CompuOpti*.
 We compute the set of **non-dominated solutions** with an exact ε-constraint method on top of a
 Gurobi MIP, and visualise them in objective space and decision space.
