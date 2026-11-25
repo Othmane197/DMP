@@ -1,5 +1,5 @@
 # DMP — CompuOpti Staff Scheduling & Project Allocation
-> **MSc Artificial Intelligence — Decision Modeling** (CentraleSupélec & École Centrale Casablanca)
+> **MSc Artificial Intelligence — Decision Modeling** (CentraleSupélec)
 
 **Group:** Othmane MAAMAR, Ronita Chakraborty, Balvinder Singh
 
@@ -7,7 +7,7 @@ Multi-objective staffing of engineers on client projects for the company *CompuO
 We compute the set of **non-dominated solutions** with an exact ε-constraint method on top of a
 Gurobi MIP, and visualise them in objective space and decision space.
 
-**Report (deliverable): [docs/report/CompuOpti_report.pdf](docs/report/CompuOpti_report.pdf)**, rebuilt from `results/` by `python docs/report/build_report.py`.
+**Report (deliverable): [docs/report/CompuOpti_report.pdf](docs/report/CompuOpti_report.pdf)**. Every number and table is generated from `results/`: `python docs/report/build_report_tex.py` writes the LaTeX report to `docs/report/latex/` (compile with pdfLaTeX); `build_report.py` builds the earlier HTML version.
 Longer plain-language explanation: [docs/PROJECT_EXPLAINED.md](docs/PROJECT_EXPLAINED.md)
 
 ## Objectives
@@ -59,7 +59,7 @@ python run_pareto.py data/large_instance.json --merge results/large results/larg
 python run_pareto.py data/toy_instance.json --secondary max_projects late_projects
 python benchmark.py
 python docs/slides/make_slide_figures.py
-python docs/report/build_report.py
+python docs/report/build_report_tex.py   # LaTeX report from results/ (then compile latex/CompuOpti_report.tex)
 ```
 
 Interrupted runs resume from `results/<instance>/checkpoint.jsonl` (certificate: `results/large_certify/certificate.jsonl`) when the same command is re-run; finished solves are replayed, not recomputed.
